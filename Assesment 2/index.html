@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment-2</title>
+</head>
+<body>
+<script>
+  // 1) Calculating Area of Rectangle //
+  let lenght="12";
+  let width="2";
+  let area = lenght * width;
+  console.log(`Area of Rectangle: ${area}`);
+  // 2) if else..
+  let age = +prompt("Enter your age?", 20);
+  if (age >= 18) {
+    alert("Eligible to Vote");
+   } 
+   else {
+   alert("You must be 18 or older to vote");
+   }
+   // 3) finding largest num
+   let a,b,c;
+   a=+prompt("Enter 1st number");  
+   b=+prompt("Enter 2nd number");
+   c=+prompt("Enter 3rd number");
+   if(a>b && a>c)
+   alert(a+ " a is greater number");
+   else if(b>a && b>c)
+   alert(b+ "b is greater number");
+   else
+   alert(c+ "c is greater number");
+    //4) temperature to fahrenheit conversion//
+    let F = prompt("Enter a temperature in fahrenheit");
+    let C = F-32 * (5/9);
+    alert ("fahrenheit to celcius= "+C);
+    // 5) num positve or negative
+    let x;
+    x=prompt("Enter the number");
+    if(x>0)
+    alert(x+ " is positive number");
+    else if(x<0)
+    alert(x+ "is negative number");
+    else if(x == 0)
+    alert(x+ "is equal number");
+    // 6) largest num using ternary operator
+    var n1=5 , n2=10, n3=15, max;
+    max= (n1>n2) ? (n1>n3 ? n1:n3): (n2>n3 ? n2:n3);
+    console.log("the largest num" +max);    
+    // 7) sum of even num
+    let sum=0
+    for(i=1; i<=100; i++)
+    {
+      if(i%2==0)
+      {
+      sum=sum+i
+      }
+    }
+  console.log(sum)
+  // 8)
+  let amount = parseFloat(prompt("Enter the amount:"));
+  let discount;
+  if (amount >= 1000) {
+    discount = 10;
+   } 
+   else if (amount >= 500) {
+      discount = 5;
+    } 
+    else {
+     discount = 0;
+    }
+ console.log("The discount percentage is: " + discount + "%");
+ // 9) factorial of  num
+ let number = parseInt(prompt("Enter a non-negative integer:"));
+let factorial = 1;
+let i = 1;
+ 
+while (i <= number) {
+ factorial *= i;
+ i++;
+}
+// 10) 
+    for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+          document.write(" * "); 
+        }
+        document.write("<br />");
+      }
+      
+ </Script>
+</body>
+</html>
